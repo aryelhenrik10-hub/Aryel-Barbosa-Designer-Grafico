@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Portfólio de Aryel Barbosa: Criativo de Marketing, Desenvolvedor Web, Fotógrafo e Músico em Caçapava, SP. Estratégias visuais que convertem.">
+    <meta name="keywords" content="Aryel Barbosa, Designer Gráfico, Marketing Digital, Desenvolvedor Web, Portfólio, Caçapava, São Paulo">
+    <meta name="author" content="Aryel Henrik T. Barbosa">
+    
+    <meta property="og:title" content="Aryel Barbosa | Criativo de Marketing & Designer">
+    <meta property="og:description" content="Estrategista visual focado em converter ideias em resultados tangíveis. Conheça meu portfólio.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://seusite.com.br/caminho-para-uma-imagem-de-capa.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/x-icon" href="./Creative Echo logo.png">
+
+    <title>Aryel Barbosa | Criativo de Marketing</title>
+    <link rel="icon" type="image/png" href="Design sem nome.png" onerror="this.style.display='none'">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #050505;
+            color: #e6e6e6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ff8c00 0%, #ff0080 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 140, 0, 0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-tag {
+            display: inline-block;
+            padding: 6px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            color: #ff8c00;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 2px 2px 3px #111;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        @media (min-width: 768px) {
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                font-size: 30px;
+            }
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+        }
+
+        .vinyl-spin {
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            will-change: transform;
+        }
+
+        .slide {
+            flex: 0 0 100%; 
+            width: 100%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        .slider-image-container {
+            height: 250px; 
+            @media (min-width: 640px) { height: 350px; }
+            @media (min-width: 1024px) { height: 450px; }
+        }
+
+        .nav-dot {
+            transition: all 0.3s ease;
+            width: 8px;
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .nav-dot.active {
+            width: 32px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #ff8c00 0%, #ff0080 100%);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff8c00; }
+    </style>
+</head>
+<body class="antialiased selection:bg-orange-500 selection:text-white relative">
+
+    <a href="https://wa.me/5512991262104" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Entrar em contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10" id="navbar">
+        <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="text-lg md:text-xl font-black tracking-tighter">
+                <span class="gradient-text uppercase">@</span>ARYELHENRIK.<span class="gradient-text uppercase">DESIGNER</span>
+            </div>
+            
+            <ul class="hidden lg:flex space-x-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
+                <li><a href="#especialidades" class="hover:text-white transition">Especialidades</a></li>
+                <li><a href="#experiencia" class="hover:text-white transition">Trajetória</a></li>
+                <li><a href="#projetos" class="hover:text-white transition">Projetos</a></li>
+            </ul>
+            
+            <div class="flex items-center">
+                <a href="https://wa.me/5512991262104" target="_blank" rel="noopener" class="bg-white text-black px-6 py-2 rounded-full font-extrabold text-[10px] md:text-xs hover:bg-orange-500 hover:text-white transition-all transform hover:scale-105 active:scale-95 block">
+                    WHATSAPP
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="min-h-screen flex items-center pt-24 pb-12 px-4 md:px-6">
+            <div class="container mx-auto text-center">
+                <span class="reveal section-tag italic">O impossível é possível na ponta da caneta</span>
+                
+                <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter leading-[0.9]">
+                    ARYEL <span id="typed-text" class="gradient-text"></span>
+                </h1>
+                
+                <p class="reveal max-w-2xl mx-auto text-gray-400 text-base md:text-lg mb-8 md:mb-10 font-light px-2">
+                    Criativo de Marketing, Desenvolvedor Web, Fotógrafo e Músico.<br class="hidden md:block"> Estrategista visual focado em converter ideias em resultados tangíveis.
+                </p>
+                
+                <div class="reveal flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+                    <a href="#experiencia" class="bg-white text-black px-8 py-4 rounded-full font-extrabold hover:bg-orange-500 hover:text-white transition-all uppercase text-[10px] sm:text-xs tracking-widest w-full sm:w-auto">
+                        CONHECER TRAJETÓRIA
+                    </a>
+                    <a href="#projetos" class="bg-transparent text-white px-8 py-4 rounded-full font-extrabold hover:bg-white/10 transition-all uppercase text-[10px] sm:text-xs tracking-widest border border-white/20 w-full sm:w-auto">
+                        VER PROJETOS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialidades" class="py-20 md:py-32 bg-zinc-950">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    
+                    <div class="reveal glass-card p-6 md:p-8 rounded-3xl sm:col-span-2 lg:col-span-2 flex flex-col justify-center">
+                        <span class="section-tag self-start border-none !bg-orange-500/10">Perfil Profissional</span>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Criativo & Apaixonado</h3>
+                        <p class="text-gray-400 leading-relaxed font-light text-sm md:text-base">
+                            Criativo e apaixonado por aprender, com grande capacidade para executar as tarefas a mim designadas. Tenho facilidade em desenvolver um bom relacionamento interpessoal e procuro sempre garantir a satisfação dos clientes em cada projeto que atuo.
+                        </p>
+                    </div>
+                    
+                    <div class="reveal glass-card p-6 md:p-8 rounded-3xl h-full flex flex-col items-start hover:border-orange-500/50 transition-colors group">
+                        <div class="bg-orange-500/10 p-3 rounded-xl mb-4 group-hover:bg-orange-500/20 transition-colors">
+                            <i class="fas fa-laptop-code text-orange-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-2 text-lg">Sistemas & Web</h4>
+                        <p class="text-xs text-gray-400 font-light">Desenvolvimento de Sistemas, Web Design e Informática (Intermediário).</p>
+                    </div>
+                    
+                    <div class="reveal glass-card p-6 md:p-8 rounded-3xl h-full flex flex-col items-start hover:border-pink-500/50 transition-colors group">
+                        <div class="bg-pink-500/10 p-3 rounded-xl mb-4 group-hover:bg-pink-500/20 transition-colors">
+                            <i class="fas fa-bullhorn text-pink-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-2 text-lg">Marketing Digital</h4>
+                        <p class="text-xs text-gray-400 font-light">Estratégias de Marketing Digital, Superior em andamento e Vendas.</p>
+                    </div>
+
+                    <div class="reveal glass-card p-6 md:p-8 rounded-3xl h-full flex flex-col items-start hover:border-blue-500/50 transition-colors group">
+                        <div class="bg-blue-500/10 p-3 rounded-xl mb-4 group-hover:bg-blue-500/20 transition-colors">
+                            <i class="fas fa-camera text-blue-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-2 text-lg">Visual & Oratória</h4>
+                        <p class="text-xs text-gray-400 font-light">Design Gráfico, Fotografia e Oratória de alta performance.</p>
+                    </div>
+
+                    <div class="reveal glass-card p-6 md:p-8 rounded-3xl h-full flex flex-col items-start hover:border-green-500/50 transition-colors group">
+                        <div class="bg-green-500/10 p-3 rounded-xl mb-4 group-hover:bg-green-500/20 transition-colors">
+                            <i class="fas fa-headphones text-green-500 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-2 text-lg">Música & Foco</h4>
+                        <p class="text-xs text-gray-400 font-light">Músico DJ, base forte em Teoria Musical e prática de Mindfulness.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-20 md:py-32 px-4 md:px-6 bg-black">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col lg:flex-row gap-16 lg:gap-20">
+                    
+                    <div class="lg:w-1/2">
+                        <span class="section-tag reveal border-none !bg-orange-500/10">Carreira</span>
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 md:mb-12 reveal">Trajetória Profissional.</h2>
+                        
+                        <div class="space-y-10 border-l border-zinc-800 ml-3 md:ml-4">
+                            <div class="reveal relative pl-8 md:pl-10">
+                                <div class="absolute w-4 h-4 bg-orange-500 rounded-full -left-[9px] top-1"></div>
+                                <h4 class="text-lg md:text-xl font-bold">Designer Gráfico & Administrativo</h4>
+                                <span class="text-gray-500 text-xs md:text-sm block mb-3 font-bold uppercase tracking-widest">Uniplan Assistência</span>
+                                <p class="text-gray-400 text-sm leading-relaxed font-light">
+                                    Trabalhei desenvolvendo criação de conteúdo, vídeos, publicações (posts), criação de site e Outdoors. Atuei também diretamente na área administrativa da empresa.
+                                </p>
+                            </div>
+
+                            <div class="reveal relative pl-8 md:pl-10">
+                                <div class="absolute w-4 h-4 bg-pink-500 rounded-full -left-[9px] top-1"></div>
+                                <h4 class="text-lg md:text-xl font-bold">Vendedor</h4>
+                                <span class="text-gray-500 text-xs md:text-sm block mb-3 font-bold uppercase tracking-widest">Produtos Alimentícios & Unip Assistência</span>
+                                <p class="text-gray-400 text-sm leading-relaxed font-light">
+                                    Trabalhei como vendedor de produtos alimentícios e também na venda de planos familiares da Unip Assistência Funerária.
+                                </p>
+                            </div>
+
+                            <div class="reveal relative pl-8 md:pl-10">
+                                <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1"></div>
+                                <h4 class="text-lg md:text-xl font-bold">Atendente & Vendedor</h4>
+                                <span class="text-gray-500 text-xs md:text-sm block mb-3 font-bold uppercase tracking-widest">São Geraldo - Uni 1</span>
+                                <p class="text-gray-400 text-sm leading-relaxed font-light">
+                                    Trabalho como atendente na São Geraldo - Uni 1 e atuo ativamente na área de vendas.
+                                </p>
+                            </div>
+
+                            <div class="reveal relative pl-8 md:pl-10">
+                                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-1"></div>
+                                <h4 class="text-lg md:text-xl font-bold">Segurança (Estágio)</h4>
+                                <span class="text-gray-500 text-xs md:text-sm block mb-3 font-bold uppercase tracking-widest">Zeladoria Gênesis</span>
+                                <p class="text-gray-400 text-sm leading-relaxed font-light">
+                                    Atuei como segurança de monitoramento de câmaras na Zeladoria Gênesis em formato de estágio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2">
+                        <span class="section-tag reveal border-none !bg-orange-500/10">Educação e Especialidades</span>
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 md:mb-12 reveal">Base académica.</h2>
+                        
+                        <div class="space-y-4 md:space-y-6">
+                            <div class="reveal glass-card p-5 md:p-6 rounded-2xl border-l-4 border-l-orange-500">
+                                <span class="text-orange-500 text-[10px] font-bold tracking-widest uppercase mb-1 block">Superior</span>
+                                <h4 class="text-base md:text-lg font-bold">Marketing Digital (Superior)</h4>
+                                <p class="text-gray-500 text-xs md:text-sm mt-1 font-light"><strong>Faculdade UniCV:</strong> Estudei e aprendi as estratégias de marketing utilizadas para 2025 e 2026.</p>
+                            </div>
+                            
+                            <div class="reveal glass-card p-5 md:p-6 rounded-2xl border-l-4 border-l-pink-500">
+                                <span class="text-pink-500 text-[10px] font-bold tracking-widest uppercase mb-1 block">Concluído em 2024</span>
+                                <h4 class="text-base md:text-lg font-bold">Ensino Médio e Técnico em Marketing</h4>
+                                <p class="text-gray-500 text-xs md:text-sm mt-1 font-light">Formado no Ensino Médio/Técnico da <strong>Escola Prof. Roque Passarelli</strong> em conjunto com a <strong>ETEC Machado de Assis</strong>.</p>
+                            </div>
+
+                            <div class="reveal glass-card p-5 md:p-6 rounded-2xl border-l-4 border-l-blue-500 mt-6">
+                                <span class="text-blue-500 text-[10px] font-bold tracking-widest uppercase mb-1 block">Fontes de Especialidades (Imersões e Cursos)</span>
+                                <h4 class="text-base md:text-lg font-bold">Aperfeiçoamento Prático</h4>
+                                <ul class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed font-light space-y-2">
+                                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i><strong>Mercado e Prática:</strong> Azimute Company e Agência Setup.</li>
+                                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i><strong>Desenvolvimento/Design:</strong> Instituto Kultive (Mentor: Prof. César Augusto).</li>
+                                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i><strong>Arte e Música:</strong> Estação Juventude Caçapava, Pedrada Caçapava e Bandlab.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-20 md:py-32 px-4 md:px-6 bg-zinc-950 border-y border-white/5 overflow-hidden">
+            <div class="container mx-auto max-w-6xl reveal">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
+                    <div>
+                        <span class="section-tag border-none !bg-orange-500/10">Creative Echo</span>
+                        <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">Projetos <span class="gradient-text">Concluídos</span></h2>
+                        <p class="text-gray-400 font-light max-w-xl text-sm md:text-base">Do design de comunicação à autoridade de marca. Clique na imagem para ver as artes da campanha. 👇</p>
+                    </div>
+                    
+                    <div class="hidden md:flex gap-4">
+                        <button onclick="prevSlide()" class="w-12 h-12 md:w-14 md:h-14 rounded-full glass-card flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all group" aria-label="Slide anterior">
+                            <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                        </button>
+                        <button onclick="nextSlide()" class="w-12 h-12 md:w-14 md:h-14 rounded-full glass-card flex items-center justify-center hover:bg-pink-500 hover:text-white transition-all group" aria-label="Próximo slide">
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="slider-container rounded-3xl md:rounded-[2.5rem] bg-black/40 border border-white/5 p-4 md:p-8" id="slider-main-container">
+                    <div class="slider-wrapper" id="slider-wrapper">
+                        
+                        <!-- PROJETO 1: BARCAROLA -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('barcarola')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-red-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Barcarola Pizzaria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logobarcarola.png" alt="Logo Barcarola" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-red-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-red-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Design Gastronômico</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Barcarola Pizzaria</h3>
+                                    <p class="text-red-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Gatilho de Fome e Desejo</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Estratégia visual focada em despertar desejo imediato. Uso estratégico de cores quentes (vermelho), tipografia de alto impacto e tratamento de imagem impecável para destacar a textura e qualidade do produto, focando 100% na conversão de pedidos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 2: HARMONY IMÓVEIS -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('harmony')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-teal-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Harmony Imóveis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logoharmony.png" alt="Logo Harmony" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-teal-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-teal-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Mercado Imobiliário</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Harmony Imóveis</h3>
+                                    <p class="text-teal-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Segurança e Sonho (Medium Ticket)</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Comunicação desenvolvida para imobiliária de médio e alto padrão. O layout foi pensado para passar credibilidade, segurança na documentação e, simultaneamente, despertar o lado emocional da conquista e do sonho da casa própria.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 3: SOS SAÚDE -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('sos_saude')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-blue-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80" alt="SOS Saúde Cirúrgica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logosos.png" alt="Logo SOS Saúde" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-blue-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-blue-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Saúde e Confiança</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">SOS Saúde Cirúrgica</h3>
+                                    <p class="text-blue-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Design Clean e Institucional</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Identidade visual limpa (clean) e direta, focada em transmitir o máximo de profissionalismo. A linha editorial destaca o bem-estar da família, cuidado adequado com idosos e a autoridade em equipamentos hospitalares e de mobilidade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 4: RITA JANUÁRIO -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('rita_januario')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-emerald-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80" alt="Rita Januário Nutricionista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logorita.png" alt="Logo Rita Januário" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-emerald-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-emerald-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Saúde & Nutrição</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">RITA Januário</h3>
+                                    <p class="text-emerald-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Nutrição Glicêmica e Bem-Estar</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Estratégia visual focada em transmitir confiança, equilíbrio e saúde fundamentada em ciência. Design minimalista utilizando paletas de verde e tons terrosos para atrair pacientes buscando controle da glicemia e resgate da qualidade de vida.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 5: DANI ALVES -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('dani_alves')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-fuchsia-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Dani Alves Nutricionista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logodani.png" alt="Logo Dani Alves" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-fuchsia-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-fuchsia-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Alta Performance</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">DANI ALVES</h3>
+                                    <p class="text-fuchsia-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Nutricionista em Emagrecimento</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Identidade vibrante e motivacional focada na transformação. Uso de cores quentes e tipografias ousadas para incentivar a ação, além do uso estratégico de depoimentos para gerar forte prova social no nicho de emagrecimento definitivo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 6: AZIMUTE COMPANY -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('azimute')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-orange-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Azimute Company" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logoazimute.png" alt="Logo Azimute" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-orange-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-orange-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">B2B & Performance</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Azimute Company</h3>
+                                    <p class="text-orange-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Agência de Mkt & Tráfego Pago</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Design corporativo arrojado e "high-tech". Foco total em apresentar dashboards, ROI e crescimento de empresas em escala. Paleta escura com contrastes neon para reforçar o viés de inovação, dados e agressividade em anúncios patrocinados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 7: AUTO ESCOLA CAMPOS -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('auto_escola')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-yellow-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Auto Escola Campos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logoautoescola.png" alt="Logo Auto Escola Campos" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-yellow-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-yellow-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Educação no Trânsito</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Auto Escola Campos</h3>
+                                    <p class="text-yellow-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Independência e Liberdade</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Comunicação direta, popular e acessível. Criações desenvolvidas para despertar o desejo da primeira CNH, com forte apelo de promoções locais e facilidade no pagamento, usando a psicologia das cores (amarelo e preto) pertinentes ao trânsito.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 8: AFFINI SEGUROS -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('affini')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-zinc-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Affini Seguros" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logoaffini.png" alt="Logo Affini Seguros" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-zinc-700 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-zinc-700 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">High Ticket</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Affini Seguros</h3>
+                                    <p class="text-zinc-400 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Alta Cilindrada e Exclusividade</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Estética 'Dark' voltada para a sofisticação e o mercado premium de duas rodas. Foco no público apaixonado por motos de alta cilindrada. Visuais intensos que transmitem máxima proteção, exclusividade de clube e atendimento impecável.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 9: UNIPLAN MED -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('uniplan_med')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-cyan-500/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Uniplan Med" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logouniplanmed.png" alt="Logo Uniplan Med" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-cyan-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-cyan-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Saúde Acessível</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Uniplan Med</h3>
+                                    <p class="text-cyan-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Clínica de Custo-Benefício</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Layout acolhedor e altamente informativo. Estratégia de criação visual que destaca o preço popular sem comprometer a autoridade e credibilidade médica, utilizando cores frias (ciano e branco) que expressam tranquilidade e assepsia clínica.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 10: UNIPLAN ASSISTÊNCIA -->
+                        <div class="slide">
+                            <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-center h-full">
+                                <div onclick="openModal('uniplan_funeraria')" class="w-full lg:w-1/2 slider-image-container rounded-2xl md:rounded-3xl overflow-hidden relative group cursor-pointer border border-transparent hover:border-slate-400/50 transition-all">
+                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Uniplan Assistência Funerária" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                                    
+                                    <!-- LOGO DA MARCA -->
+                                    <div class="absolute top-4 right-4 md:top-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-zinc-900/90 backdrop-blur-sm rounded-full border border-white/10 p-2 flex items-center justify-center z-20 shadow-2xl group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                                        <img src="logouniplanassist.png" alt="Logo Uniplan Assistência" class="max-w-full max-h-full object-contain drop-shadow-md rounded-full">
+                                    </div>
+
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                        <span class="bg-slate-600 text-white font-bold px-6 py-2 rounded-full uppercase tracking-widest text-xs">Ver Posts <i class="fa-solid fa-eye ml-2"></i></span>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                                        <span class="bg-slate-600 text-white text-[9px] md:text-[10px] font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full uppercase tracking-widest mb-2 inline-block">Acolhimento Luto</span>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:pl-6">
+                                    <h3 class="text-3xl md:text-4xl font-black mb-2">Uniplan Assistência</h3>
+                                    <p class="text-slate-400 text-xs md:text-sm font-bold tracking-widest uppercase mb-4">Plano Funerário e Homenagem</p>
+                                    <p class="text-gray-400 mb-6 leading-relaxed font-light text-sm md:text-base">
+                                        Identidade visual elaborada com extrema sensibilidade, empatia e sobriedade. Comunicação orientada à prevenção, conforto e respeito familiar, empregando paletas sutis para atenuar o tabu e priorizar o amparo emocional aos entes queridos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center gap-3 mt-8 flex-wrap max-w-full" id="slider-dots">
+                    <!-- Dots preenchidos por JS -->
+                </div>
+                
+                <div class="text-center text-[10px] uppercase tracking-widest text-gray-500 mt-4 md:hidden font-bold">
+                    <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslize para explorar
+                </div>
+            </div>
+        </section>
+
+        <section id="creative-echo" class="pt-24 md:pt-32 relative overflow-hidden bg-[#111111] border-y border-white/5">
+            <!-- Glow de fundo reproduzindo as cores do banner -->
+            <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#ff5e00]/15 blur-[120px] rounded-full pointer-events-none"></div>
+            <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#df00d3]/15 blur-[120px] rounded-full pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <!-- Envolucro max-w para centralizar e aproximar os elementos da tela -->
+                <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+                    
+                    <!-- LADO ESQUERDO: TEXTOS E BOTÃO -->
+                    <div class="w-full md:w-1/2 text-center md:text-left z-20 pb-10 md:pb-12">
+                        <h2 class="reveal text-5xl sm:text-6xl lg:text-7xl font-black tracking-tighter mb-2 uppercase text-white leading-[0.9]">
+                            FAZ TUDO <br>
+                            <span class="bg-gradient-to-r from-[#ff5e00] to-[#df00d3] bg-clip-text text-transparent drop-shadow-sm">DIGITAL</span>
+                        </h2>
+                        
+                        <p class="reveal text-gray-300 max-w-md mx-auto md:mx-0 font-light leading-relaxed text-sm md:text-base mb-8 md:mb-10 mt-4">
+                            Por que pagar caro a uma equipe inteira se você pode ter um estrategista que resolve tudo? Do design à programação, eu transformo a sua ideia numa máquina de vendas online.
+                        </p>
+                        
+                        <div class="reveal flex flex-col items-center md:items-start gap-4">
+                            <!-- ARYEL: Substitua "LINK_DA_CREATIVE_ECHO_AQUI" pelo link real -->
+                            <a href="https://aryelhenrik10-hub.github.io/Faz-Tudo-Digital/" target="_blank" rel="noopener" class="bg-gradient-to-r from-[#ff5e00] to-[#df00d3] text-white px-8 py-4 md:py-5 rounded-full font-black hover:scale-105 transition-transform uppercase text-[10px] sm:text-[11px] tracking-widest shadow-[0_0_30px_rgba(223,0,211,0.3)] inline-block">
+                                TIRAR MINHA IDEIA DO PAPEL AGORA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LADO DIREITO: IMAGEM (ARYEL) -->
+                    <div class="w-full md:w-1/2 flex justify-center items-end relative z-10">
+                        <!-- Elementos decorativos circulares atrás -->
+                        <div class="absolute top-[10%] right-[70%] w-24 h-24 rounded-full border border-white/20 opacity-50 pointer-events-none hidden md:block"></div>
+                        <div class="absolute top-[20%] right-[65%] w-32 h-32 rounded-full border-[0.5px] border-white/10 opacity-30 pointer-events-none hidden md:block"></div>
+                        
+                        <!-- A imagem centralizada. Usando a nova imagem recortada -->
+                        <img src="Design sem nome.png" alt="Aryel Barbosa - Faz Tudo Digital" class="reveal max-h-[450px] md:max-h-[600px] object-contain drop-shadow-2xl relative z-10 bottom-0" style="mix-blend-mode: lighten;">
+                    </div>
+                </div>
+                
+                <!-- CARDS DE BENEFÍCIOS -->
+                <div class="reveal pb-24 md:pb-32 mt-10 md:mt-16 relative z-20 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto text-left">
+                    <div class="glass-card p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 bg-zinc-900/60 hover:bg-zinc-900/90 transition-colors group">
+                        <div class="w-12 h-12 rounded-full bg-[#df00d3]/10 flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-clock text-[#df00d3] text-lg"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-3 text-base md:text-lg">Mais Tempo Livre</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed font-light">Pare de microgerenciar 5 freelancers diferentes. Fale só comigo e eu resolvo, tudo enquanto você foca em vender.</p>
+                    </div>
+                    
+                    <div class="glass-card p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 bg-zinc-900/60 hover:bg-zinc-900/90 transition-colors group">
+                        <div class="w-12 h-12 rounded-full bg-[#ff5e00]/10 flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wallet text-[#ff5e00] text-lg"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-3 text-base md:text-lg">Redução de Custos</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed font-light">Qualidade de agência, preço de especialista independente. Você paga pelo resultado, não por escritórios luxuosos.</p>
+                    </div>
+
+                    <div class="glass-card p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 bg-zinc-900/60 hover:bg-zinc-900/90 transition-colors group">
+                        <div class="w-12 h-12 rounded-full bg-[#ff0080]/10 flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bullseye text-[#ff0080] text-lg"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-3 text-base md:text-lg">Foco em Conversão</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed font-light">A internet não perdoa site feio ou design amador. O meu design e copywriting são projetados para fazer o cliente clicar e comprar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="musica" class="py-20 md:py-32 bg-black overflow-hidden border-y border-white/5">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <span class="reveal section-tag border-none !bg-orange-500/10">Portfolio Musical</span>
+                    <h2 class="reveal text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+                        Músico & <span class="gradient-text">DJ.</span>
+                    </h2>
+                    <p class="reveal text-gray-400 mt-4 md:mt-6 max-w-2xl mx-auto font-light leading-relaxed text-sm md:text-base">
+                        Especialização pela plataforma Bandlab e presente no cenário cultural em Caçapava. A música ensinou-me sobre ritmo, composição e harmonia — princípios que aplico diretamente no Design.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                    <div class="reveal glass-card p-6 md:p-8 rounded-[2rem] text-center group">
+                        <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 md:mb-8">
+                            <div class="absolute inset-0 bg-purple-500/20 blur-3xl group-hover:bg-purple-500/40 transition-all rounded-full"></div>
+                            <i class="fas fa-compact-disc text-[8rem] md:text-[10rem] text-purple-500 vinyl-spin relative z-10 flex justify-center items-center h-full"></i>
+                        </div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2">Lofi Ancestral 8D</h4>
+                        <p class="text-gray-500 text-[10px] md:text-xs uppercase tracking-widest mb-4 md:mb-6 font-bold">Produção Bandlab</p>
+                        <audio controls preload="none" src="Lofi_Ancestral_8D.m4a" class="w-full h-8 opacity-60 hover:opacity-100 transition-opacity"></audio>
+                    </div>
+
+                    <div class="reveal glass-card p-6 md:p-8 rounded-[2rem] text-center group">
+                        <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 md:mb-8">
+                            <div class="absolute inset-0 bg-orange-500/20 blur-3xl group-hover:bg-orange-500/40 transition-all rounded-full"></div>
+                            <i class="fas fa-compact-disc text-[8rem] md:text-[10rem] text-orange-500 vinyl-spin relative z-10 flex justify-center items-center h-full"></i>
+                        </div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2">Previsão</h4>
+                        <p class="text-gray-500 text-[10px] md:text-xs uppercase tracking-widest mb-4 md:mb-6 font-bold">Produção Bandlab</p>
+                        <audio controls preload="none" src="Previsao.m4a" class="w-full h-8 opacity-60 hover:opacity-100 transition-opacity"></audio>
+                    </div>
+
+                    <div class="reveal glass-card p-6 md:p-8 rounded-[2rem] text-center group">
+                        <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 md:mb-8">
+                            <div class="absolute inset-0 bg-red-500/20 blur-3xl group-hover:bg-red-500/40 transition-all rounded-full"></div>
+                            <i class="fas fa-compact-disc text-[8rem] md:text-[10rem] text-red-500 vinyl-spin relative z-10 flex justify-center items-center h-full"></i>
+                        </div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2">Enquanto Posso</h4>
+                        <p class="text-gray-500 text-[10px] md:text-xs uppercase tracking-widest mb-4 md:mb-6 font-bold">Produção Bandlab</p>
+                        <audio controls preload="none" src="Enquanto_Posso.m4a" class="w-full h-8 opacity-60 hover:opacity-100 transition-opacity"></audio>
+                    </div>
+
+                    <div class="reveal glass-card p-6 md:p-8 rounded-[2rem] text-center group">
+                        <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 md:mb-8">
+                            <div class="absolute inset-0 bg-pink-500/20 blur-3xl group-hover:bg-pink-500/40 transition-all rounded-full"></div>
+                            <i class="fas fa-compact-disc text-[8rem] md:text-[10rem] text-pink-500 vinyl-spin relative z-10 flex justify-center items-center h-full"></i>
+                        </div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2">Corrompidos pela Rede</h4>
+                        <p class="text-gray-500 text-[10px] md:text-xs uppercase tracking-widest mb-4 md:mb-6 font-bold">Produção Bandlab</p>
+                        <audio controls preload="none" src="Corrompidos_pela_rede.m4a" class="w-full h-8 opacity-60 hover:opacity-100 transition-opacity"></audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="py-20 md:py-32 bg-zinc-950">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <span class="section-tag border-none !bg-orange-500/10">Vamos Conversar</span>
+            <h2 class="text-4xl md:text-6xl lg:text-7xl font-black mb-12 md:mb-16 tracking-tighter">ESTÁ NA <span class="gradient-text">HORA.</span></h2>
+            
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-12 mb-16 md:mb-24">
+                <a href="mailto:aryelhenrik10@gmail.com" class="text-base md:text-xl font-light hover:text-orange-500 transition border-b border-zinc-800 pb-2 break-all">aryelhenrik10@gmail.com</a>
+                <a href="https://wa.me/5512991262104" target="_blank" rel="noopener" class="text-base md:text-xl font-light hover:text-orange-500 transition border-b border-zinc-800 pb-2">(12) 99126-2104</a>
+                <a href="https://www.instagram.com/aryelhenrik.designer/" target="_blank" rel="noopener" class="text-base md:text-xl font-light hover:text-orange-500 transition border-b border-zinc-800 pb-2">@aryelhenrik.designer</a>
+            </div>
+
+            <p class="text-[9px] md:text-[10px] text-zinc-600 uppercase font-bold tracking-[0.3em] md:tracking-[0.5em]">© 2024 Aryel H. T. Barbosa | Caçapava, SP</p>
+        </div>
+    </footer>
+
+    <!-- Modal Projetos -->
+    <div id="project-modal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-zinc-900/80 border border-white/10 rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto p-6 md:p-10 relative scroll-smooth">
+            <button onclick="closeModal()" class="fixed top-6 right-6 md:absolute md:top-8 md:right-8 bg-black/50 w-12 h-12 rounded-full text-white hover:bg-orange-500 hover:text-white transition-all text-xl z-20 flex items-center justify-center border border-white/10" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modal-title" class="text-3xl md:text-5xl font-black mb-8 gradient-text uppercase tracking-tighter text-center">Título</h3>
+            
+            <div id="modal-posts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- NOVO: Modal Visualizador de Imagem (Lightbox / Zoom) -->
+    <div id="image-viewer-modal" class="fixed inset-0 z-[110] hidden bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 opacity-0 transition-opacity duration-300" onclick="closeImageViewer()">
+        <button onclick="closeImageViewer()" class="absolute top-6 right-6 md:top-8 md:right-8 bg-black/50 w-12 h-12 rounded-full text-white hover:text-orange-500 transition-colors text-2xl z-20 flex items-center justify-center border border-white/10" aria-label="Fechar zoom">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+            <img id="viewer-img" src="" alt="Imagem Ampliada" class="max-w-full max-h-[80vh] object-contain rounded-xl shadow-2xl border border-white/10">
+            <p id="viewer-desc" class="text-white mt-6 font-bold tracking-widest uppercase text-xs md:text-sm text-center bg-zinc-900/80 px-6 py-3 rounded-full border border-white/10"></p>
+        </div>
+    </div>
+
+    <script>
+        // --- DADOS DOS PROJETOS COM LEGENDAS DE MARKETING ---
+        const projectData = {
+            'barcarola': {
+                title: 'Barcarola Pizzaria',
+                posts: [
+                    { img: 'Barcarola - Post+Story (2).png', desc: 'Campanha de Preço e Oferta Direta' },
+                    { img: 'Barcarola - Post+Story (3).png', desc: 'Gatilho de Desejo e Foco no Produto' },
+                    { img: 'Promoção.png', desc: 'Sazonalidade e Fidelização do Cliente' }
+                ]
+            },
+            'harmony': {
+                title: 'Harmony Imóveis',
+                posts: [
+                    { img: 'Harmony post+story (1).png', desc: 'Ancoragem de Preço e Senso de Oportunidade' },
+                    { img: 'Harmony post+story (2).png', desc: 'Gatilho Emocional e Projeção de Futuro' },
+                    { img: 'Harmony post+story (3).png', desc: 'Marketing de Conteúdo e Construção de Autoridade' }
+                ]
+            },
+            'sos_saude': {
+                title: 'SOS Saúde Cirúrgica',
+                posts: [
+                    { img: 'S.O.S Posts (2).png', desc: 'Conteúdo Sazonal e Foco em Prevenção' },
+                    { img: 'S.O.S Posts (3).png', desc: 'Posicionamento Institucional e Apelo Familiar' },
+                    { img: 'S.O.S Posts (4).png', desc: 'Prova de Autoridade e Credibilidade Técnica' }
+                ]
+            },
+            'rita_januario': {
+                title: 'RITA Januário',
+                posts: [
+                    { img: 'Palheta & Layout Rita (1).png', desc: 'Conteúdo de Valor e Educação do Paciente' },
+                    { img: 'Palheta & Layout Rita (2).png', desc: 'Quebra de Objeções e Desmistificação' },
+                    { img: 'Palheta & Layout Rita.png', desc: 'Estratégia de Engajamento e Aplicação Prática' }
+                ]
+            },
+            'dani_alves': {
+                title: 'DANI ALVES Nutrição',
+                posts: [
+                    { img: '3 A 5KG A MENOS COM REEDUCAÇÃO ALIMENTAR EM 30 DIAS no método PD O MIV® reprograma seu metabolismo com nutrição comportamental e treinos curtos. Saia da estagnação em 30 dias. ATIVAR MEU METABOLIS (1).png', desc: 'Prova Social e Demonstração de Resultado' },
+                    { img: '3 A 5KG A MENOS COM REEDUCAÇÃO ALIMENTAR EM 30 DIAS no método PD O MIV® reprograma seu metabolismo com nutrição comportamental e treinos curtos. Saia da estagnação em 30 dias. ATIVAR MEU METABOLIS (2).png', desc: 'Venda de Estilo de Vida e Praticidade' },
+                    { img: '3 A 5KG A MENOS COM REEDUCAÇÃO ALIMENTAR EM 30 DIAS no método PD O MIV® reprograma seu metabolismo com nutrição comportamental e treinos curtos. Saia da estagnação em 30 dias. ATIVAR MEU METABOLIS.png', desc: 'Conteúdo de Retenção e Formato Educativo' }
+                ]
+            },
+            'azimute': {
+                title: 'Azimute Company',
+                posts: [
+                    { img: 'POSTS AZIMUTE (2).png', desc: 'Estratégia Topo de Funil e Captação B2B' },
+                    { img: 'POSTS AZIMUTE (3).png', desc: 'Comprovação Baseada em Dados e ROI' },
+                    { img: 'POSTS AZIMUTE.png', desc: 'Posicionamento de Marca e Cultura da Agência' }
+                ]
+            },
+            'auto_escola': {
+                title: 'Auto Escola Campos',
+                posts: [
+                    { img: 'AUTO ESCOLA CAMPOS   (1).png', desc: 'Gatilho de Conquista e Desejo de Liberdade' },
+                    { img: 'AUTO ESCOLA CAMPOS   (2).png', desc: 'Fundo de Funil e Condição Facilitada' },
+                    { img: 'AUTO ESCOLA CAMPOS  .png', desc: 'Criação de Afinidade e Superação de Medos' }
+                ]
+            },
+            'affini': {
+                title: 'Affini Seguros',
+                posts: [
+                    { img: '0106.png', desc: 'Posicionamento Premium e Exclusividade' },
+                    { img: '0206.png', desc: 'Gatilho do Medo e Urgência na Proteção' },
+                    { img: '0306.png', desc: 'Associação a Lifestyle e Segurança Viária' }
+                ]
+            },
+            'uniplan_med': {
+                title: 'Uniplan Med',
+                posts: [
+                    { img: 'Untitled.webp', desc: 'Democratização do Acesso e Apelo de Preço' },
+                    { img: 'Untitled(1).webp', desc: 'Apresentação de Portfólio e Conveniência' },
+                    { img: 'Untitled(2).webp', desc: 'Transmissão de Confiança e Valor Médico' }
+                ]
+            },
+            'uniplan_funeraria': {
+                title: 'Uniplan Assistência',
+                posts: [
+                    { img: 'Untitled(3).webp', desc: 'Conscientização Preventiva e Abordagem Acolhedora' },
+                    { img: 'Untitled(4).webp', desc: 'Marketing de Empatia e Humanização do Luto' },
+                    { img: 'Untitled(5).webp', desc: 'Percepção de Cuidado e Amparo Estrutural' }
+                ]
+            }
+        };
+
+        // --- LÓGICA DO MODAL PRINCIPAL E VIEWER DE IMAGEM ---
+        const modal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalPosts = document.getElementById('modal-posts');
+        
+        const viewerModal = document.getElementById('image-viewer-modal');
+        const viewerImg = document.getElementById('viewer-img');
+        const viewerDesc = document.getElementById('viewer-desc');
+
+        function openModal(projectId) {
+            const data = projectData[projectId];
+            if (!data) return;
+
+            stopAutoplay();
+            modalTitle.textContent = data.title;
+            
+            // Adicionado cursor-zoom-in e evento onclick para abrir a imagem
+            modalPosts.innerHTML = data.posts.map(post => `
+                <div class="rounded-2xl overflow-hidden bg-black/50 border border-white/5 group relative shadow-2xl flex flex-col items-center justify-center cursor-zoom-in" onclick="openImageViewer('${post.img}', '${post.desc.replace(/'/g, "\\'")}')" title="Clique para ampliar">
+                    <img src="${post.img}" alt="${post.desc}" class="w-full h-auto min-h-[300px] object-contain object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent p-4 pt-16">
+                        <p class="text-white font-bold tracking-widest uppercase text-[10px] md:text-xs leading-relaxed text-center group-hover:text-orange-400 transition-colors">${post.desc}</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                        <div class="bg-black/60 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100">
+                            <i class="fa-solid fa-expand text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.remove('opacity-0'), 10);
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                if(viewerModal.classList.contains('hidden')){
+                    document.body.style.overflow = 'auto';
+                    startAutoplay();
+                }
+            }, 300);
+        }
+
+        // Funções do Lightbox (Zoom da Imagem)
+        function openImageViewer(imgSrc, desc) {
+            viewerImg.src = imgSrc;
+            viewerDesc.textContent = desc;
+            viewerModal.classList.remove('hidden');
+            setTimeout(() => viewerModal.classList.remove('opacity-0'), 10);
+        }
+
+        function closeImageViewer() {
+            viewerModal.classList.add('opacity-0');
+            setTimeout(() => {
+                viewerModal.classList.add('hidden');
+                viewerImg.src = '';
+            }, 300);
+        }
+
+        // Fechar modais ao clicar no fundo negro
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // --- LÓGICA DO SLIDER COM AUTOPLAY ---
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('slider-dots');
+        const sliderWrapper = document.getElementById('slider-wrapper');
+        const sliderMainContainer = document.getElementById('slider-main-container');
+        let currentSlide = 0;
+        let startX = 0;
+        let isDragging = false;
+        let autoplayInterval;
+
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('nav-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+                resetAutoplay();
+            });
+            dotsContainer.appendChild(dot);
+        });
+        const dots = document.querySelectorAll('.nav-dot');
+
+        function updateSlider() {
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) dot.classList.add('active');
+                else dot.classList.remove('active');
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 5000); 
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        function resetAutoplay() {
+            stopAutoplay();
+            startAutoplay();
+        }
+
+        if(sliderMainContainer) {
+            sliderMainContainer.addEventListener('mouseenter', stopAutoplay);
+            sliderMainContainer.addEventListener('mouseleave', startAutoplay);
+        }
+
+        startAutoplay();
+
+        if (sliderWrapper) {
+            sliderWrapper.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                stopAutoplay(); 
+            }, {passive: true});
+
+            sliderWrapper.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const currentX = e.touches[0].clientX;
+                const diff = startX - currentX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) nextSlide(); 
+                    else prevSlide(); 
+                    isDragging = false;
+                }
+            }, {passive: true});
+
+            sliderWrapper.addEventListener('touchend', () => {
+                isDragging = false;
+                startAutoplay(); 
+            });
+        }
+
+        window.onload = function() {
+            if(document.getElementById('typed-text')) {
+                new Typed('#typed-text', {
+                    strings: ['HENRIK', 'DESIGNER', 'MÚSICO', 'FOTÓGRAFO', 'PROGRAMADOR', 'VENDEDOR'],
+                    typeSpeed: 60,
+                    backSpeed: 40,
+                    loop: true,
+                    backDelay: 2500
+                });
+            }
+
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '30px',
+                duration: 1000,
+                delay: 150,
+                easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+                reset: false
+            });
+
+            sr.reveal('.reveal', { 
+                beforeReveal: (el) => { el.style.visibility = 'visible'; } 
+            });
+            
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach(el => {
+                    el.style.visibility = 'visible';
+                });
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
